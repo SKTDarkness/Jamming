@@ -14,18 +14,18 @@ class App extends Component {
           this.search = this.search.bind(this);
     this.state = {
       searchResults: [{}],
-      playlistTracks: [{}
-      ]}
+      playlistTracks: [{}],
       playlistName: "PlayList"
-    };
-  }
-  addTrack(track)
-    if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
-return;
+  };
 }
-  }
+  addTrack(track) {
+    let tracks = this.state.playlistTracks;
+    if (tracks.find(savedTrack => savedTrack.id === track.id)) {
+      return;
+    }
+}
   removeTrack(track){
-    id = 'playlistTracks'
+  let id = 'playlistTracks'
   }
   updatePlaylistName(name){
     this.setstate ={playlist: "Name"}
