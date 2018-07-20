@@ -13,60 +13,25 @@ class App extends Component {
           this.savePlaylist = this.savePlaylist.bind(this);
           this.search = this.search.bind(this);
     this.state = {
-      searchResults: [{
-        name: 'Gucci Gang',
-        artist: 'Lil Pump',
-        album: 'Lil Pump',
-        id: 1},
-         {
-           name: 'Gucci Gang',
-           artist: 'Lil Pump',
-           album: 'Lil Pump',
-           id: 2
-         },
-          {
-            name: 'Gucci Gang',
-            artist: 'Lil Pump',
-            album: 'Lil Pump',
-            id: 3
-          }
-      ],
-      playlistTracks: [
-        {
-          name: 'Gucci Gang',
-          artist: 'Lil Pump',
-          album: 'Lil Pump',
-          id: 1
-        },
-         {
-           name: 'Gucci Gang',
-           artist: 'Lil Pump',
-           album: 'Lil Pump',
-           id: 2
-         },
-          {
-            name: 'Gucci Gang',
-            artist: 'Lil Pump',
-            album: 'Lil Pump',
-            id: 3
-          }
-      ],
-      playlistName: "HELP ME I NEED A TON OF HELP IN THIS CATEGORY"
+      searchResults: [{}],
+      playlistTracks: [{}
+      ]}
+      playlistName: "PlayList"
     };
   }
-  addTrack(track){
+  addTrack(track)
     if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
 return;
 }
   }
   removeTrack(track){
-//    id = 'playlistTracks'
+    id = 'playlistTracks'
   }
   updatePlaylistName(name){
     this.setstate ={playlist: "Name"}
   }
   savePlaylist(){
-    let trackURIs = this.state.playlistTracks.map(track => track.uri);
+      let trackURIs = this.state.playlistTracks.map(track => track.uri);
 
   }
   search(searchTerm) {
