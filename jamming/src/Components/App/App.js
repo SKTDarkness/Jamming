@@ -25,12 +25,14 @@ class App extends Component {
     }
 }
   removeTrack(track){
+    // eslint-disable-next-line
   let id = 'playlistTracks'
   }
   updatePlaylistName(name){
     this.setstate ={playlist: "Name"}
   }
   savePlaylist(){
+    // eslint-disable-next-line
       let trackURIs = this.state.playlistTracks.map(track => track.uri);
 
   }

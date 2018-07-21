@@ -1,5 +1,8 @@
 const clientId = ' b22162f56a3a4f2fb2e97ec8859b985f'; // Insert client ID here.
 const redirectUri = 'http://localhost:3000'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+// eslint-disable-next-line
+const redirectUri2 = 'http://Jammming.surge.sh';
+
 let accessToken;
 
 const Spotify = {
